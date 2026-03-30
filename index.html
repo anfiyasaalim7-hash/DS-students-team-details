@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>DS Group - Team Builder</title>
+    
+    <script src="https://www.gstatic.com/firebasejs/8.10.1/firebase-app.js"></script>
+    <script src="https://www.gstatic.com/firebasejs/8.10.1/firebase-database.js"></script>
+
+    <link href="https://fonts.googleapis.com/css2?family=Outfit:wght@300;400;600&display=swap" rel="stylesheet">
+    
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+    <div class="container">
+        <header>
+            <h1>Hello Everyone!</h1>
+            <p>Welcome to Data Structure Group Team Builder</p>
+        </header>
+
+        <div class="btn-center">
+            <button class="main-btn" onclick="openModal()">+ Create New Team</button>
+        </div>
+
+        <div class="teams-grid" id="teamsList">
+            </div>
+    </div>
+
+    <div id="formModal">
+        <div class="modal-content">
+            <h2>Add Team Details (Max 6 Members)</h2>
+            <form id="teamForm">
+                <div id="membersContainer">
+                    </div>
+                <button type="submit" class="submit-team">Finish & Create Team</button>
+                <button type="button" class="cancel-btn" onclick="closeModal()">Cancel</button>
+            </form>
+        </div>
+    </div>
+
+    <script src="script.js"></script>
+</body>
+</html>
